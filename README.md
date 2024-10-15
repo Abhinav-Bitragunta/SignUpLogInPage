@@ -19,6 +19,8 @@ To run this on your own PC:
 ```py
 app.config['MYSQL_USER'] = 'your_mysql_user'
 app.config['MYSQL_PASSWORD'] = 'your_mysql_password'
+app.config['MYSQL_PORT'] = int({your_mysql_hosting_port}) #Omit if port is 3306
+#If adding the last line, shift line 11 down by one.
 ```
 3. Run this:
 ```bash
