@@ -4,12 +4,17 @@ Log in and Sign Up page made using HTML5, CSS, and Python(Flask).
 MySQL was used for the Database, with the following definition:
 ------------------------------------
 CREATE DATABASE user_registration;
+
 USE user_registration;
 
 CREATE TABLE users (
+    
     user_id VARCHAR(255) primary key,
+    
     mobile_number bigint NOT NULL,
+    
     password VARCHAR(255) NOT NULL
+
 );
 
 To run this on your own PC:
