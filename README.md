@@ -12,9 +12,8 @@ CREATE TABLE users (
     mobile_number bigint NOT NULL,
     password VARCHAR(255) NOT NULL
 );
-
-To run this on your own PC:
 ```
+To run this on your own PC:
 ----------------------------------
 1. Replace lines 9 and 10 of app.py with these:
        app.config['MYSQL_USER'] = 'your_mysql_user'
