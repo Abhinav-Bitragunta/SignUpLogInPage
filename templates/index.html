@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/HomePage.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div id="contain">
+        <img src="/static/images/IITI-Logo.png" class="toplogo" class="nomargin" style="display: inline-block;">
+        <p id="toptext"> Welcome to IIT Indore!</p>
+        </div>
+        {% if loggedIn %}
+            <a href="{{url_for('logout')}}" class="navlogin"> Hi, {{userID}}! Logout?</a>
+        {% else %}
+            <a href="{{url_for('logInPage')}}" class="navlogin">Log in</a>
+        {% endif %}
+    </div>
+    <div class="bigdiv">
+        <p id="offeredC">Courses Offered</p>
+        <p id="branch">B.Tech in Computer Science and Engineering</p>
+    </div>
+    <div class="Course-List-Type">
+        CORE COURSES
+    </div>
+    <div class="Table-Div">
+        <table>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Title</th>
+                <th>L-T-P</th>
+                <th>Credits</th>
+                <th>Semester</th>
+            </tr>
+            <tr>
+                <td>MA 101N</td>
+                <td>Calculus-I (half Semester) </td>
+                <td> 3-1-0(=4/2)</td>
+                <td> 2</td>
+                <td> 1</td>
+            </tr>
+            <tr>
+                <td>MA 103N</td>
+                <td>Calculus-II (half Semester) </td>
+                <td> 3-1-0(=4/2)</td>
+                <td> 2</td>
+                <td> 1</td>
+            </tr>
+            <tr>
+                <td>CS 103</td>
+                <td>Computer Programming</td>
+                <td>2-0-0</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>IC 151</td>
+                <td>Computer Programming Lab</td>
+                <td>0-0-3</td>
+                <td>1.5</td>
+                <td>1</td>
+            </tr>
+            <tr><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td></tr>
+            <tr>
+                <td>MA 102N</td>
+                <td>Linear Algebra (half Semester)</td>
+                <td>2-1-0(=3/2)</td>
+                <td>1.5</td>
+                <td>2</td> 
+            </tr>
+            <tr>
+                <td>MA 104N</td>
+                <td>Differential Equations-I (half Semester)</td>
+                <td>2-1-0(=3/2)</td>
+                <td>1.5</td>
+                <td>2</td> 
+            </tr>
+            <tr><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td></tr>
+            <tr>
+                <td>ZZ xxx</td>
+                <td>Course-I for Minor Program</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>3</td> 
+            </tr>
+            <tr>
+                <td>MA 205</td>
+                <td>Complex Analysis (1/2 Sem)</td>
+                <td>3-1-0</td>
+                <td>2</td>
+                <td>3</td> 
+            </tr>
+            <tr>
+                <td>MA 207</td>
+                <td>Differential Equations-II (1/2 Sem)</td>
+                <td>3-1-0</td>
+                <td>2</td>
+                <td>3</td> 
+            </tr>
+            <tr>
+                <td>CS 201</td>
+                <td>Discrete Mathematical Structures</td>
+                <td>2-1-0</td>
+                <td>3</td>
+                <td>3</td> 
+            </tr>
+            <tr>
+                <td>CS 203</td>
+                <td>Data Structures and Algorithms</td>
+                <td>2-1-0</td>
+                <td>3</td>
+                <td>3</td> 
+            </tr>
+            <tr>
+                <td>CS 207N</td>
+                <td>Database and Information Systems</td>
+                <td>2-1-0</td>
+                <td>3</td>
+                <td>3</td> 
+            </tr>
+            <tr>
+                <td>CS 209</td>
+                <td>Logic Design</td>
+                <td>2-0-2</td>
+                <td>3</td>
+                <td>3</td> 
+            </tr>
+            <tr>
+                <td>CS 253</td>
+                <td>Data Structures and Algorithms Lab</td>
+                <td>0-0-3</td>
+                <td>1.5</td>
+                <td>3</td> 
+            </tr>
+            <tr>
+                <td>CS 257</td>
+                <td>Database and Information Systems Lab</td>
+                <td>0-0-3</td>
+                <td>1.5</td>
+                <td>3</td> 
+            </tr>
+            <tr>
+                <td>CS 2XX</td>
+                <td>Department Elective I</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>3</td> 
+            </tr>
+            <tr><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td></tr>
+            <tr>
+                <td>ZZ xxx</td>
+                <td>Course-II for Minor Program</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>4</td> 
+            </tr>
+            <tr>
+                <td>MA 204N</td>
+                <td>Numerical Methods</td>
+                <td>2-0-2</td>
+                <td>3</td>
+                <td>4</td> 
+            </tr>
+            <tr>
+                <td>CS 202</td>
+                <td>Automata Theory and Logic</td>
+                <td>2-1-0</td>
+                <td>3</td>
+                <td>4</td> 
+            </tr>
+            <tr>
+                <td>CS 204</td>
+                <td>Design and Analysis of Algorithms</td>
+                <td>2-1-0</td>
+                <td>3</td>
+                <td>4</td> 
+            </tr>
+            <tr>
+                <td>CS 210</td>
+                <td>Computer Architecture</td>
+                <td>2-1-0</td>
+                <td>3</td>
+                <td>4</td> 
+            </tr>
+            <tr>
+                <td>CS 254</td>
+                <td>Design and Analysis of Algorithms Lab</td>
+                <td>0-0-3</td>
+                <td>1.5</td>
+                <td>4</td> 
+            </tr>
+            <tr>
+                <td>CS 264</td>
+                <td>Computer Architecture Lab</td>
+                <td>0-0-3</td>
+                <td>1.5</td>
+                <td>4</td> 
+            </tr>
+            <tr>
+                <td>CS 2XX</td>
+                <td>Department Elective II</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>4</td> 
+            </tr>
+            <tr>
+                <td>ZZ 2XX</td>
+                <td>Institute Elective-I</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>4</td> 
+            </tr>
+            <tr><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td></tr>
+            <tr>
+                <td>ZZ xxx</td>
+                <td>Course III - Minor Program</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>5</td> 
+            </tr>
+            <tr>
+                <td>CS 311</td>
+                <td>Parallel Computing</td>
+                <td>2-0-2</td>
+                <td>3</td>
+                <td>5</td> 
+            </tr>
+            <tr>
+                <td>CS 303</td>
+                <td>Operating Systems</td>
+                <td>2-1-0</td>
+                <td>3</td>
+                <td>5</td> 
+            </tr>
+            <tr>
+                <td>CS 307</td>
+                <td>Optimization Algorithms and Techniques</td>
+                <td>2-1-0</td>
+                <td>3</td>
+                <td>5</td> 
+            </tr>
+            <tr>
+                <td>CS 313</td>
+                <td>Computer Networks</td>
+                <td>2-0-2</td>
+                <td>3</td>
+                <td>5</td> 
+            </tr>
+            <tr>
+                <td>CS 353N</td>
+                <td>Operating Systems Lab</td>
+                <td>0-0-2</td>
+                <td>1</td>
+                <td>5</td> 
+            </tr>
+            <tr>
+                <td>CS 357N</td>
+                <td>Optimization Algorithms and Techniques Lab</td>
+                <td>0-0-2</td>
+                <td>1</td>
+                <td>5</td> 
+            </tr>
+            <tr>
+                <td>CS 3XX</td>
+                <td>Department Elective III</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>5</td> 
+            </tr>
+            <tr>
+                <td>ZZ 3XX</td>
+                <td>Institute Elective II</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>5</td> 
+            </tr>
+            <tr><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td></tr>
+            <tr>
+                <td>ZZ xxx</td>
+                <td>Course IV - Minor Program</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>6</td> 
+            </tr>
+            <tr>
+                <td>CS 302N</td>
+                <td>Computer Graphics and Visualization</td>
+                <td>2-0-2</td>
+                <td>3</td>
+                <td>6</td> 
+            </tr>
+            <tr>
+                <td>CS 304N</td>
+                <td>Computational Intelligence</td>
+                <td>2-1-0</td>
+                <td>3</td>
+                <td>6</td> 
+            </tr>
+            <tr>
+                <td>CS 310</td>
+                <td>Software Engineering</td>
+                <td>2-0-2</td>
+                <td>3</td>
+                <td>6</td> 
+            </tr>
+            <tr>
+                <td>CS 308N</td>
+                <td>Compiler Techniques</td>
+                <td>2-0-2</td>
+                <td>3</td>
+                <td>6</td> 
+            </tr>
+            <tr>
+                <td>CS 354N</td>
+                <td>Computational Intelligence Lab</td>
+                <td>0-0-3</td>
+                <td>1.5</td>
+                <td>6</td> 
+            </tr>
+            <tr>
+                <td>CS 3XX</td>
+                <td>Department Elective IV</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>6</td> 
+            </tr>
+            <tr>
+                <td>CS 3XX</td>
+                <td>Department Elective V</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>6</td> 
+            </tr>
+            <tr>
+                <td>ZZ 3XX</td>
+                <td>Institute Elective III</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>6</td> 
+            </tr>            
+            <tr><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td></tr>
+            <tr>
+                <td>ZZ xxx</td>
+                <td>Course-V for Minor Program</td>
+                <td>x-x-x</td>
+                <td>2</td>
+                <td>7</td> 
+            </tr>
+            <tr>
+                <td>CS 493N</td>
+                <td>B Tech Project (BTP)</td>
+                <td>0-0-32</td>
+                <td>16</td>
+                <td>7</td> 
+            </tr>
+            <tr>
+                <td>CS 495</td>
+                <td>Internship - I</td>
+                <td>x-x-x</td>
+                <td>1</td>
+                <td>7</td> 
+            </tr>
+            <tr>
+                <td>CS 497</td>
+                <td>Internship - II</td>
+                <td>x-x-x</td>
+                <td>1</td>
+                <td>7</td> 
+            </tr>            
+            <tr><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td><td class="blankRow"></td></tr>
+            <tr>
+                <td>CS 4XX</td>
+                <td>Department Elective VI</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>8</td> 
+            </tr>
+            <tr>
+                <td>CS 4XX</td>
+                <td>Department Elective VII</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>8</td> 
+            </tr>
+            <tr>
+                <td>ZZ 4XX</td>
+                <td>Institute Elective IV</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>8</td> 
+            </tr>
+            <tr>
+                <td>ZZ 4XX</td>
+                <td>Institute Elective V</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>8</td> 
+            </tr>
+            <tr>
+                <td>ZZ 4XX</td>
+                <td>Institute Elective VI</td>
+                <td>x-x-x</td>
+                <td>3</td>
+                <td>8</td> 
+            </tr>
+            
+        </table>
+    </div>
+    <div class="Course-List-Type">
+        ELECTIVES
+    </div>
+    <div class="Table-Div">
+        <table>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Title</th>
+                <th>L-T-P</th>
+                <th>Credits</th>
+            </tr>
+            <tr>
+                <td>CS 211</td> 
+                <td>UX/UI Design</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 213</td> 
+                <td>Matrix Factorization and Applications</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 215</td> 
+                <td>Mathematics for AI and ML</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 212</td> 
+                <td>Foundation of Algebraic Graph Theory</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 214</td> 
+                <td>Foundations of Hardware Security</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 315</td> 
+                <td>Introduction to Complexity Theory</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 317</td> 
+                <td>Introduction to Internet of Things</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 319</td> 
+                <td>Foundations of Cryptography</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 321</td> 
+                <td>Introduction to Big Data Analysis</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 312</td> 
+                <td>Foundations of Secure Computation</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 314</td> 
+                <td>Computer and Network Security</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 401 / CS 601</td> 
+                <td>Soft Computing</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 403 / CS 603</td> 
+                <td>Machine Learning</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 404 / EE 304</td> 
+                <td>Digital Signal Processing</td> 
+                <td>3-1-0</td> 
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>CS 406 / CS 606</td> 
+                <td>Data Mining and Data Warehousing</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 407</td> 
+                <td>Peripherals and Interfaces</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 408</td> 
+                <td>Algorithms for Convex Programming</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 409 / CS 609</td> 
+                <td>Advanced Topics in Database Management Systems</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 410</td> 
+                <td>Genetic Algorithms</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 411 / CS 611</td> 
+                <td>Advanced Algorithms</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 412 / CS 612</td> 
+                <td>Pattern Recognition</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 413</td> 
+                <td>Topics in Artificial Intelligence Programming</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 414 / CS 614</td> 
+                <td>Cloud Computing and Applications</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 416 / CS 616</td> 
+                <td>Service Oriented Systems</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 417 / CS 617</td> 
+                <td>Cryptography and Network Security</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 418 / CS 618</td> 
+                <td>Systems and Usable Security</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 420 / CS 620</td> 
+                <td>Embedded Systems</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 422 / CS 622</td> 
+                <td>Numerical Simulation</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 424</td> 
+                <td>Functional and Logic Programming</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 425 / CS 625</td> 
+                <td>Natural Language Processing</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 426 / CS 626</td> 
+                <td>Foundations of Cyber-Physical Systems</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 427 / CS 627</td> 
+                <td>Advanced Computer Networks</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 428 / CS 628</td> 
+                <td>Algorithmic Graph Theory</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 430 / CS 630</td> 
+                <td>Data Center Networking</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 432 / CS 632</td> 
+                <td>Reinforcement Learning</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 334 / CS 434 / CS 634</td> 
+                <td>Wireless Networks and Applications</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 435 / CS 635</td> 
+                <td>Deep Learning</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 438 / CS 638</td> 
+                <td>Network Softwarization and Management</td> 
+                <td>2-0-2</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 440 / CS 640</td> 
+                <td>Distributed Network Algorithms</td> 
+                <td>2-1-0</td> 
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS 442</td> 
+                <td>Generative AI</td>
+                <td>2-1-0</td>
+                <td>3</td>
+            </tr>
+            
+
+        </table>
+    </div>
+</body>
+</html>

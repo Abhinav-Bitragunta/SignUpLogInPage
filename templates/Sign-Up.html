@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/static/Sign-Up.css">
+</head>
+
+<body>
+    <div class="LogoDiv">
+        <img src="/static/images/IITI-Logo.png" class="Logo">
+        <p class="createText">Create an IIT-I account</p>
+    </div>
+    <div class="signup-container">
+        {% if log %}
+        <div class="log-container"><div class="log">{{log}}</div></div>
+        {% endif %}
+        <form action="/signup" method="POST" class="signup-form">
+            <label for="userID" class="boxText">User ID</label>
+            <p style="margin:0;"><input type="email" name="userID" id="userID" placeholder="branch-rollno@iiti.ac.in" required></p>
+            <label for="regPhNo" class="boxText">Mobile Number</label>
+            <p style="margin:0;"><input type="text" pattern="[0-9]{10}" id="regPhNo" name="regPhNo" placeholder="0123456789" required></p>
+            <label for="regPwd" class="boxText">Password</label>
+            <p style="margin:0;"><input type="password" name="regPwd" id="regPwd" required></p>
+            <p style="margin:0;"><input type="submit" value="Sign Up" class="submit-button"></p>
+            <p style="margin:0;"><a href="{{url_for('logInPage')}}" class="log-in-redirect">Already have an account? Log In</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>

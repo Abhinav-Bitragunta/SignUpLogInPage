@@ -1,0 +1,160 @@
+body {
+    display: grid;
+    place-content: center;
+    margin: 0;
+    padding: 10rem 0rem 0rem 0rem;
+    font-size: 16px;
+    background-color: azure;
+    font-size: 16px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/images/BGImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+.nomargin {
+    margin: 0;
+}
+
+
+input[type=email],
+input[type=text],
+input[type=password] {
+    background-color: rgb(250, 245, 239);
+    font-size: 0.9rem;
+    width: 100%;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.4rem;
+    box-shadow: 0.15rem 0.15rem 0.15rem lightblue ;
+    border-style: none;
+
+}
+
+.LogoDiv {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border-color: #115296;
+}
+
+.Logo {
+    display: block;
+    border-style: solid;
+    border-color: #115296;
+    width: 20%;
+    height: auto;
+    margin-top: 0.8rem;
+    margin-bottom: 0rem;
+    border-radius: 5rem;
+    background-color: rgb(250, 245, 239);
+    box-shadow: 0.2em 0.4em 0.2em  black;
+
+}
+
+.createText {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    color: azure;
+    text-shadow: 0.15rem 0.15rem 0.1rem black;
+    margin-bottom: 0rem;
+
+}
+
+form p {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0.8em;
+}
+
+.signup-container {
+    width: 40rem;
+    border-style: solid;
+    background-color: whitesmoke;
+    border-color: #115296;
+    border-radius: 0.5rem;
+    height: fit-content;
+    box-shadow: 0.2em 0.5em 0.2em black;
+    padding-top: 0rem;
+}
+
+.signup-form {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.submit-button {
+    margin: 0 auto;
+    background-color: #115296;
+    color: white;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+    margin-top: 3rem;
+}
+
+.submit-button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: #115296;
+}
+
+.log-in-redirect {
+    margin: 0 auto;
+    color: blue;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.log-in-redirect:hover {
+    color: lightblue;
+}
+
+.boxText{
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 1.3rem;
+    margin-left: 0.4rem;
+}
+
+.log-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log{
+    background-color: #115296;
+    color: azure;
+    font-size: 1.2rem;
+    text-shadow: 0.15rem 0.15rem 0.1rem black;
+    width: fit-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+

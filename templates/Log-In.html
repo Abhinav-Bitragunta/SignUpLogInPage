@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="/static/Log-In.css">
+</head>
+
+<body>
+    <div class="LogoDiv">
+        <img src="/static/images/IITI-Logo.png" class="Logo">
+        <p class="createText">Log into your IIT-I account</p>
+    </div>
+    <div class="login-container">
+        {% if log %}
+        <div class="log-container"><div class="log">{{log}}</div></div>
+        {% endif %}
+        <form action="/login" method="POST" class="login-form">
+            <label for="loginID" class="boxText">User ID</label>
+            <p style="margin:0;"><input type="email" name="loginID" id="loginID" placeholder="branch-rollno@iiti.ac.in" required></p>
+            <label for="loginPwd" class="boxText">Password</label>
+            <p style="margin:0;"><input type="password" name="loginPwd" id="loginPwd" required></p>
+            <p style="margin:0;"><input type="submit" value="Log In" class="submit-button"></p>
+            <p style="margin:0;"><a href="{{url_for('signUpPage')}}" class="sign-up-redirect">Don't have an account? Sign up</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>

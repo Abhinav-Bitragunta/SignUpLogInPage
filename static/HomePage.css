@@ -1,0 +1,126 @@
+body{
+    background-color: whitesmoke;
+    margin:0 0 3rem 0;
+}
+.topbar{
+    box-sizing: border-box;
+    display: flex;
+    width:100%;
+    height: 10rem;
+    align-items: center;
+    justify-content:center ; /* formerly center*/
+    background-color: #115296;
+    padding-right: 0.5rem;
+}
+
+#contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.toplogo{
+    height: 9rem;
+    margin:0;
+    border-radius: 5rem;
+    margin-right: 0.7rem;
+    background-color: white;
+}
+
+#toptext{
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 0.7rem;
+    /* border-style: solid; */
+    color:white;
+}
+#toptext:hover{
+    color:lightcyan;
+    cursor:default;
+}
+
+.bigdiv{
+    width: 100%;
+    text-align: center;
+}
+#offeredC{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+#branch{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;    
+}
+
+.Course-List-Type{
+    width:100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #115296;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+.Table-Div{
+    display: flex;
+    justify-content: center;
+}
+table{
+    width:80%;
+    background-color: white;
+    box-shadow: 0.2rem 0.4rem 0.2rem black;
+}
+th{
+    font-size: 1.35rem;
+    line-height: 2rem;
+    background-color: #115296 !important ;
+    border-color: black;
+    color:white;
+}
+td{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+table,th,td{
+    border-style: solid;
+    border-width: 0.1rem;
+    border-collapse: collapse;
+    text-align: center;
+    /* background-color: lightcyan; */
+}
+
+tr{
+    background-color: lightcyan;
+}
+
+tr:hover{
+    background-color: lightblue;
+}
+
+.blankRow{
+    border-style: none;
+    background-color: white;
+}
+
+.navlogin{
+    color: #115296;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+
+.navlogin:hover{
+    color: darkblue;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
